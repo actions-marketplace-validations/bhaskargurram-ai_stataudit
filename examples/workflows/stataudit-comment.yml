@@ -23,7 +23,7 @@ jobs:
       contents: read
       actions: read          # download the artifact of the triggering run
       pull-requests: write   # upsert the comment and the label
-    uses: bhaskargurram-ai/stataudit/.github/workflows/comment.yml@v1.0.1
+    uses: bhaskargurram-ai/stataudit/.github/workflows/comment.yml@v1.0.2
     with:
-      stataudit-ref: v1.0.1
+      stataudit-ref: v1.0.2
       labels: true

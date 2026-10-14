@@ -4,6 +4,12 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.0.2] - 2026-10-14
+
+### Changed
+
+- The GitHub Action is listed on the Marketplace as "stataudit statistics audit" (`stataudit` alone is reserved by an existing GitHub account). Workflows that use `bhaskargurram-ai/stataudit@v1.0.2` are unaffected; only the display name changed.
+
 ## [1.0.1] - 2026-10-14
 
 ### Fixed

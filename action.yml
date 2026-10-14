@@ -1,4 +1,4 @@
-name: stataudit
+name: stataudit statistics audit
 description: "Check AI-written statistics with evidence: re-run analyses, recompute reported p-values, lint analysis code."
 author: Bhaskar Gurram
 branding:
