@@ -13,6 +13,7 @@
   <a href="https://github.com/bhaskargurram-ai/stataudit/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue" alt="Python 3.10 to 3.13">
   <a href="https://pypi.org/project/stataudit/"><img src="https://img.shields.io/pypi/v/stataudit" alt="PyPI: stataudit"></a>
+  <a href="https://github.com/marketplace/actions/stataudit-statistics-audit"><img src="https://img.shields.io/badge/GitHub%20Marketplace-action-2ea44f?logo=github" alt="GitHub Marketplace"></a>
   <img src="https://img.shields.io/badge/agent-experimental-orange" alt="Agent: experimental">
 </p>
 
@@ -24,7 +25,7 @@ It doesn't matter whether a person or an AI assistant wrote the analysis. statau
 </p>
 
 > [!NOTE]
-> **Status: 1.0.0.** stataudit traces 13 `scipy.stats` tests plus statsmodels OLS, in scripts and Jupyter notebooks. It also recomputes p-values reported in text (`check-report`), lints analysis code without running it (`lint`), and runs all three on pull requests. The agent (`fix`, `explain`) is **experimental and off by default**; it needs your own LLM API key, and nothing it writes counts until stataudit has run it. The full reference for every command, option and key is [docs/REFERENCE.md](https://github.com/bhaskargurram-ai/stataudit/blob/main/docs/REFERENCE.md).
+> **Status: stable (1.x).** stataudit traces 13 `scipy.stats` tests plus statsmodels OLS, in scripts and Jupyter notebooks. It also recomputes p-values reported in text (`check-report`), lints analysis code without running it (`lint`), and runs all three on pull requests. The agent (`fix`, `explain`) is **experimental and off by default**; it needs your own LLM API key, and nothing it writes counts until stataudit has run it. The full reference for every command, option and key is [docs/REFERENCE.md](https://github.com/bhaskargurram-ai/stataudit/blob/main/docs/REFERENCE.md).
 
 ## Contents
 
@@ -505,7 +506,7 @@ stataudit raises the bar; it is **not** a sandbox. A malicious PR can still tamp
 
 Different tools answer different questions. This is our best reading of each as of October 2026; corrections are welcome.
 
-| | [statcheck](https://github.com/MicheleNuijten/statcheck)<br><sub>Nuijten & Epskamp; R and web app</sub> | stat-lint<br><sub>[*The Fault in our Stats*, ASE 2025](https://conf.researchr.org/details/ase-2025/ase-2025-papers/226/The-Fault-in-our-Stats)</sub> | [pingouin](https://pingouin-stats.org) / [statsmodels diagnostics](https://www.statsmodels.org/stable/diagnostic.html) | LLM data-analysis agents<br><sub>e.g. ChatGPT data analysis, Julius</sub> | **stataudit**<br><sub>1.0.0</sub> |
+| | [statcheck](https://github.com/MicheleNuijten/statcheck)<br><sub>Nuijten & Epskamp; R and web app</sub> | stat-lint<br><sub>[*The Fault in our Stats*, ASE 2025](https://conf.researchr.org/details/ase-2025/ase-2025-papers/226/The-Fault-in-our-Stats)</sub> | [pingouin](https://pingouin-stats.org) / [statsmodels diagnostics](https://www.statsmodels.org/stable/diagnostic.html) | LLM data-analysis agents<br><sub>e.g. ChatGPT data analysis, Julius</sub> | **stataudit**<br><sub>1.x</sub> |
 |---|---|---|---|---|---|
 | Main question | Do the reported numbers agree with each other? | Does the code meet statistical best practice? | Does this data meet this assumption? | What does my data say? | **Does the conclusion survive on the data?** |
 | Input | Article text (PDF, HTML, Word) | Python notebooks, statically | Arrays you pass to each function | Data and a prompt | Your script or notebook and its data; also text and code statically |
